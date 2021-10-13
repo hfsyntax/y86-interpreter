@@ -1,0 +1,26 @@
+==1545178== Memcheck, a memory error detector
+==1545178== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1545178== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1545178== Command: ../y86 -e inputs/iotrap_str_esc.o
+==1545178== 
+Beginning execution at 0x0100
+Y86 CPU state:
+  %rip: 000000000000010a   flags: Z0 S0 O0     INS
+  %rax: 0000000000000000    %rcx: 0000000000000000
+  %rdx: 0000000000000000    %rbx: 0000000000000000
+  %rsp: 0000000000000000    %rbp: 0000000000000000
+  %rsi: 0000000000000300    %rdi: 0000000000000000
+   %r8: 0000000000000000     %r9: 0000000000000000
+  %r10: 0000000000000000    %r11: 0000000000000000
+  %r12: 0000000000000000    %r13: 0000000000000000
+  %r14: 0000000000000000
+Total execution count: 2
+==1545178== 
+==1545178== HEAP SUMMARY:
+==1545178==     in use at exit: 0 bytes in 0 blocks
+==1545178==   total heap usage: 4 allocs, 4 frees, 20,952 bytes allocated
+==1545178== 
+==1545178== All heap blocks were freed -- no leaks are possible
+==1545178== 
+==1545178== For lists of detected and suppressed errors, rerun with: -s
+==1545178== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
